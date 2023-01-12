@@ -5,7 +5,8 @@ const colors = ["あか", "あお", "みどり"];
 console.log(colors[1]);
 
 // 2.ループを使用して配列の中から全ての値をコンソールで表示する
-colors.forEach((value, index, array) => {
+// colors.forEach((value, index, array) => {
+     colors.forEach((value) => {
     console.log(value)
 });
 
@@ -48,11 +49,11 @@ const cats = [
 
 // 6.コンソールに毛の長い猫のみ絞り込んでnameを表示する
     const findLongHair = cats.filter(findHair => findHair.hairLength === 'long' )
-    .map(({name}) => {
-        return{
-            name
-        }
-    });
-    
-    console.log(findLongHair);
+//     .map(({name}) => {
+//         return{
+//             name
+//         }
+//     });
+// console.log(findLongHair);
+    console.log(findLongHair[0].name + 'と' + findLongHair[1].name + 'です！');
     
